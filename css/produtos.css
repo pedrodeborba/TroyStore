@@ -1,0 +1,250 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #fff;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    height:90%;
+    padding: 0px;
+    margin: 10px;
+    right: 5px;
+}
+
+img{
+    height: 100%;
+    max-width: 100%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #9B9B9B;
+    border-bottom: 2px solid #000;
+    box-shadow: 0 0 15px 1px #000;
+    z-index: 1;
+}
+
+label.nome{
+    color: #fff;
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Koulen', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Teko', sans-serif;
+    font-family: 'Yuji Syuku', serif;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    border-radius: 15px;
+    padding:4px;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #9B9B9B;
+    transition:  .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.margem{
+   margin: 5% 10% 5% 10%;
+   background-color: #fff;
+   width: 80%;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-align: center; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+}
+
+.produto{
+    width: 30%;
+    border: 3px;
+    float: left;
+    position: relative;
+    left: 10px;
+    background: rgb(255, 255, 255);
+    color: #FFF;
+}
+
+.imagem{
+    width: 100%;
+}
+
+.escrita{
+    width: 100%;
+    text-align: center;
+}
+
+.preco{
+    width:100%;
+}
+
+a:hover{
+    background: rgb(226, 226, 226);
+    transition:  .5s;
+}
+
+
+footer{
+    width: 100%;
+}
+
+.footer1{
+    background-color: #9B9B9B;
+    color: #fff;
+    text-align: center;
+    width: 98%;
+    display: block;
+}
+
+
+@media(max-width:1200px){
+    .margem{
+        margin: 15% 10% 5% 10%;
+        background-color: #fff;
+     }
+}
+
+
+@media(max-width:900px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        padding-left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(102, 101, 128, 0.35);
+        backdrop-filter: blur(8px);
+        left:-110%;
+        text-align: center;
+        transition: all .5s;
+        border-right: 5px solid #000;
+    }
+    nav ul li{
+        padding-top: 40px;
+        display: block;
+    }
+
+    nav ul li a{
+        margin-right:0px;
+        font-size: 30px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav a.active,nav a:hover{
+        background: none;
+        border-bottom: 5px solid;
+    }
+
+}
+
+@media(max-width:800px){
+    .margem{
+        margin: 10% 10% 5% 10%;
+        background-color: #fff;
+     }
+}
+
+@media(max-width:666px){
+    .margem{
+        margin: 15% 10% 5% 20%;
+        background-color: #fff;
+        width: 80%;
+     }
+
+     #produto-none{
+        display: none;
+     }
+}
+
+@media(max-width:550px){
+    .margem{
+        margin: 15% 10% 5% 10%;
+        background-color: #fff;
+        width: 90%;
+     }
+
+     .produto{
+        width: 40%;
+        border: 3px;
+        float: left;
+        position: relative;
+        left: 10px;
+        background: rgb(255, 255, 255);
+        color: #FFF;
+    }
+}
+
+@media(max-width:457px){
+    label.nome{
+        padding: 10px 0 10px 50px;
+    }
+
+    .margem{
+        margin: 20% 10% 5% 10%;
+        background-color: #fff;
+        width: 90%;
+     }
+}
